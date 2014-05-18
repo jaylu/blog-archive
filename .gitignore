@@ -1,0 +1,15 @@
+.idea
+*.iml
+
+_site
+
+#copy from webfrog
+_theme_packages/*
+
+Thumbs.db
+.DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
