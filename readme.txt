@@ -9,3 +9,18 @@ push to gitcafe
 ##############
 
 git push gitcafe master:gitcafe-pages
+
+
+##############
+create new page
+##############
+
+rake post title="titlename"
+
+##############
+markdown reference
+##############
+
+http://www.mceiba.com/develop/markdown-syntax.html
+
+
