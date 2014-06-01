@@ -7,6 +7,8 @@ tags: []
 ---
 {% include JB/setup %}
 
+<div id="category"></div>
+
 ### Back ground
 
 My friend (Cloud) touch jekyll and recommend that to me. I like the simple way like this to write blogs, so I decide to make one to document down the tech stuff and my life.  Thanks to my wife be with me at the coffee shop to create this.
@@ -15,11 +17,13 @@ Hello World, here we are.
 
 ### Some reference
 
-[jekyll](#)    
-[jekyll bootstrap](http://jekyllbootstrap.com/)	   
-[http://www.mceiba.com/](http://www.mceiba.com/develop/jekyll-introduction.html)    	
+[jekyll](#)
+[jekyll bootstrap](http://jekyllbootstrap.com/)
+[http://www.mceiba.com/](http://www.mceiba.com/develop/jekyll-introduction.html)
 
-### code highlight support
+### Special high light
+
+#### code highlight support
 
 After reading several documents, finally find out a way to support code block highlight which I think would be very useful.
 
@@ -32,3 +36,14 @@ int main(int argc, char **argv)
     return 0;
 }
 {% endhighlight %}
+
+#### page content index generation
+
+I think it would be easy to let people to locate the content they interest in by clicking the index. Thanks for helps from [here](https://gist.github.com/allwefantasy/6238442), an index of the page can be generated automatically.
+
+What we need to do is to add below tag into the md file head.
+
+{% highlight html %}
+<div id="category"></div>
+{% endhighlight %}
+

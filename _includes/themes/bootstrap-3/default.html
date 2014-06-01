@@ -23,8 +23,6 @@
     <!-- Custom styles -->
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
-    <link rel="stylesheet" type="text/css" href="/assets/css/pygments.css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -100,7 +98,28 @@
 
 <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="/assets/js/jquery-1.11.1.min.js"></script>
 <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+
+
+<!-- pygments -->
+<link rel="stylesheet" type="text/css" href="/assets/css/pygments.css">
+
+<!-- to generate the category -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("h2,h3,h4,h5,h6").each(function(i,item){
+            var tag = $(item).get(0).localName;
+            $(item).attr("id","jay_category_index_"+i);
+            $("#category").append('<a class="new'+tag+'" href="#jay_category_index_'+i+'">'+$(this).text()+'</a></br>');
+            $(".newh2").css("margin-left",0);
+            $(".newh3").css("margin-left",20);
+            $(".newh4").css("margin-left",40);
+        });
+    });
+</script>
+
+
 </body>
 </html>
