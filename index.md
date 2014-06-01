@@ -46,3 +46,12 @@ What we need to do is to add below tag into the md file head.
 {% endhighlight %}
 
 
+#### use duoshuo comments plug-in
+
+For this Blog's audience likely may from China, so a Chinese comments plugin which name [duoshuo](www.duoshuo.com) was chosen. So for now you can login with QQ/weibo/RenRen/Douban to make your comments. 
+
+#### picture repository
+
+To be simple, we can use the git repository as the picture repository, but considering the space is limited, so need to registry a repository from external. 
+
+
