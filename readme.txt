@@ -9,6 +9,7 @@ push to gitcafe
 ##############
 
 git push gitcafe master:gitcafe-pages
+git push origin master
 
 
 ##############
