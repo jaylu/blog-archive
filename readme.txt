@@ -19,6 +19,13 @@ create new page
 rake post title="titlename"
 
 ##############
+run from local
+##############
+
+jekyll server -w
+
+
+##############
 markdown reference
 ##############
 
